@@ -13,10 +13,10 @@ pipeline {
 
     stage('Checkout SCM') {
       steps {
-            git branch: 'main', url: 'https://github.com/darey-devops/php-todo.git'
+            git branch: 'main', url: 'https://github.com/tobesegun/php-todo.git'
       }
     }
-
+ 
     stage('Prepare Dependencies') {
       steps {
              sh 'mv .env.sample .env'
